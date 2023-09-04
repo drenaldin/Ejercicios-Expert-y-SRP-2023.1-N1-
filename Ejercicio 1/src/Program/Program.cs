@@ -1,17 +1,33 @@
-﻿using System;
-
-namespace Ucu.Poo.Expert
+﻿class Libro
 {
+    public string Titulo { get; set; }
+    public string Autor { get; set; }
+    public string ISBN { get; set; }
 
-    class Program
+    // Constructor
+    public Libro(string titulo, string autor, string isbn)
     {
-        static void Main()
-        {
-            Book book1 = new Book("Design Patterns","Erich Gamma & Others","001-034");
-            Book book2 = new Book("Pro C#","Troelsen","001-035");
-            book1.ShelveBook("A","7");
-            book2.ShelveBook("B","3");
+        Titulo = titulo;
+        Autor = autor;
+        ISBN = isbn;
+    }
 
-        }
+    // Método para colocar un libro en un estante
+    public void ColocarEnEstante(string letraEstante, int numeroEstante)
+    {
+        // Lógica para colocar el libro en un estante
+    }
+
+    // Método para calcular el precio del libro
+    public double CalcularPrecio()
+    {
+        // Lógica para calcular el precio del libro
+        // Basado en algún criterio, como longitud del título, número de páginas, etc.
+    }
+
+    // Método para generar un informe del libro
+    public string GenerarInforme()
+    {
+        // Lógica para generar un informe del libro
     }
 }
